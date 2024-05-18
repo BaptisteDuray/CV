@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}CV DURAY Baptiste{% endblock %}</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ asset('style.css') }}" />
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <style>
+      @media print {
+        body {
+          width: 100%;
+          height: auto;
+        }
+        .page-break {
+          page-break-after: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+    
+    <!-- Footer -->
+    <footer class="footer mt-5" id="footer">
+        <div class="row pt-4 d-flex justify-content-around">
+            <div class="col-md-3">
+                <!-- left footer  -->
+               <div class="left">
+                    <div>
+                        <button class="bt btn-sm"><img class="icon" src="{{ asset('icons/geo-alt.svg') }}" alt=" "></button><span class="text"> &nbsp; Rajiv Bhawan IIT Roorkee</span>
+                    </div>
+                    <div>
+                        <button class="bt btn-sm mt-3"><img class="icon" src="{{ asset('icons/telephone-fill.svg') }}" alt=" "></button><span class="text"> &nbsp; +91 324435543 </span>
+                    </div>               
+               </div>             
+            </div>
+            
+            <div class="col-md-3 text-center Right">
+               <!-- Right footer  -->
+               <h4 class="text">Follow me</h4>
+               <div class="links d-flex justify-content-around">
+                    <button class="bt btn-sm"><a href="https://github.com/Saurabh251000" target="_blank"><img class="icon" src="{{ asset('icons/github.svg') }}" alt=""></a></button>
+                    <button class="bt btn-sm"><a href="https://www.linkedin.com/in/saurabh-kushwaha-064017212/" target="_blank"><img class="icon" src="{{ asset('icons/linkedin.svg') }}" alt=""></a></button>
+                    <button class="bt btn-sm"><a href="https://www.instagram.com/_restart__art" target="_blank"><img class="icon" src="{{ asset('icons/instagram.svg') }}" alt=""></a></button>
+                    <button class="bt btn-sm"><a href="https://twitter.com/25100rabh" target="_blank"><img class="icon" src="{{ asset('icons/twitter.svg') }}" alt=""></a></button>
+                    <button class="bt btn-sm"><a href="https://www.facebook.com/saurabh.kushwaha.94043/" target="_blank"><img class="icon" src="{{ asset('icons/facebook.svg') }}" alt=""></a></button>
+               </div>
+            </div>
+        </div>
+        <div class="text mt-3 bottom"><p>Developed by  &#10084; DURAY Baptiste || All rights reserved till - 2024</p></div>
+    </footer>
+    <script src="{{ asset('script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
