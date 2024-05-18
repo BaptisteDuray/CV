@@ -1,40 +1,148 @@
+/* Réinitialisation du CSS */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  #cv-template{
-    display: none;
-  }
-  .myimg{
-    border: 2px solid black;
-    width: 200px;
-    border-radius: 50%;
-  }
-  .background{
-    background-color: lightcoral;
-    z-index: 1000;
-  }
-  .header{
-    color: white;
-    align-items: center;
-  }
-  .footer{
-    background-color: rgb(32, 34, 36); 
-  }
-  .bt{
-    border: none;
-    background-color: rgb(139, 139, 139); 
-  }
-  .icon{
-    padding: 2px 4px 2px 4px;
-  }
-  .text{
-    color: #b9b9b9;
-    padding-bottom: 5px;
-  }
-  .bottom{
-    text-align: center;
-  }
+/* Style pour le formulaire de CV */
+#cv-template {
+  display: none;
+}
+
+/* Style pour les images */
+.myimg {
+  border: 2px solid black;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Style pour le fond */
+.background {
+  background-color: lightcoral;
+  z-index: 1000;
+}
+
+/* Style pour l'en-tête */
+.header {
+  color: white;
+  align-items: center;
+}
+
+/* Style pour le pied de page */
+.footer {
+  background-color: rgb(32, 34, 36); 
+}
+
+/* Style pour les boutons */
+.bt {
+  border: none;
+  background-color: rgb(139, 139, 139); 
+}
+
+/* Style pour les icônes */
+.icon {
+  padding: 2px 4px 2px 4px;
+}
+
+/* Style pour le texte */
+.text {
+  color: #b9b9b9;
+  padding-bottom: 5px;
+}
+
+/* Style pour le bas de page */
+.bottom {
+  text-align: center;
+}
+
+/* Style pour la deuxième colonne du formulaire */
+#cv-form .col-md-6 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les titres */
+#cv-form h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style pour les groupes de formulaire */
+#cv-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Style pour les étiquettes de formulaire */
+#cv-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour les zones de texte */
+#cv-form textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Style pour les listes en ligne */
+#cv-form .list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Style pour les éléments de liste en ligne */
+#cv-form .list-inline-item {
+  margin-right: 10px;
+}
+
+/* Style pour les titres de section */
+#cv-form h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style pour le tableau des langages informatiques */
+.lang-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style pour les lignes du tableau */
+.lang-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les cellules du tableau */
+.lang-table td {
+  padding: 10px;
+}
+
+/* Style pour les titres de section dans le tableau */
+.lang-table th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style pour les langages front-end */
+.frontend-lang {
+  background-color: #f8d7da; /* Couleur de fond rouge */
+}
+
+/* Style pour les langages back-end */
+.backend-lang {
+  background-color: #d4edda; /* Couleur de fond verte */
+}
+
+/* Style pour les autres langages et outils */
+.other-lang {
+  background-color: #d1ecf1; /* Couleur de fond bleue */
+}
