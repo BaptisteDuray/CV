@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact me{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h1>Contact</h1>
+            {{ form_start(contactForm, {'attr': {'class': 'contact-form'}}) }}
+            <div class="mb-3">
+                {{ form_widget(contactForm.Firstname, {'attr': {'class': 'form-control', 'placeholder': 'First Name'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.Name, {'attr': {'class': 'form-control', 'placeholder': 'Last Name'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.Company, {'attr': {'class': 'form-control', 'placeholder': 'Company'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.mail, {'attr': {'class': 'form-control', 'placeholder': 'Email'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.contact_number, {'attr': {'class': 'form-control', 'placeholder': 'Contact Number'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.message, {'attr': {'class': 'form-control', 'placeholder': 'Message', 'rows': '4'}}) }}
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-danger" id="backButton" data-route="{{ path('app_main') }}">Back</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            {{ form_end(contactForm) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/script.js') }}"></script>
+{% endblock %}

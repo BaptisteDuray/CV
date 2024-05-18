@@ -146,3 +146,18 @@
 .other-lang {
   background-color: #d1ecf1; /* Couleur de fond bleue */
 }
+
+/* Style pour le bouton Back */
+.contact-form .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.contact-form .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Style pour l'espacement entre les boutons */
+.contact-form .btn {
+  margin-top: 10px;
+}

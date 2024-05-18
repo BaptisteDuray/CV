@@ -31,31 +31,44 @@
     {% block body %}{% endblock %}
     
     <!-- Footer -->
-    <footer class="footer mt-5" id="footer">
-        <div class="row pt-4 d-flex justify-content-around">
-            <div class="col-md-3">
-                <!-- left footer  -->
-               <div class="left">
-                    <div>
-                        <button class="bt btn-sm"><img class="icon" src="{{ asset('icons/geo-alt.svg') }}" alt=" "></button><span class="text"> &nbsp; Strasbourg</span>
-                    </div>
-                    <div>
-                        <button class="bt btn-sm mt-3"><img class="icon" src="{{ asset('icons/telephone-fill.svg') }}" alt=" "></button><span class="text"> &nbsp; +33 686527809 </span>
-                    </div>               
-               </div>             
-            </div>
-            
-            <div class="col-md-3 text-center Right">
-               <!-- Right footer  -->
-               <h4 class="text">Follow me</h4>
-               <div class="links d-flex justify-content-around">
-                    <button class="bt btn-sm"><a href="https://github.com/BaptisteDuray/" target="_blank"><img class="icon" src="{{ asset('icons/github.svg') }}" alt=""></a></button>
-                    <button class="bt btn-sm"><a href="https://www.linkedin.com/in/baptisteduray" target="_blank"><img class="icon" src="{{ asset('icons/linkedin.svg') }}" alt=""></a></button>
-               </div>
+<footer class="footer mt-5" id="footer">
+    <div class="row pt-4 d-flex justify-content-around">
+        <div class="col-md-3">
+            <!-- left footer  -->
+            <div class="left">
+                <div>
+                    <button class="bt btn-sm"><img class="icon" src="{{ asset('icons/geo-alt.svg') }}" alt=" "></button><span class="text"> &nbsp; Strasbourg</span>
+                </div>
+                <div>
+                    <button class="bt btn-sm mt-3"><img class="icon" src="{{ asset('icons/telephone-fill.svg') }}" alt=" "></button><span class="text"> &nbsp; +33 686527809 </span>
+                </div>               
+            </div>             
+        </div>
+        
+        <div class="col-md-3 text-center Right">
+            <!-- Right footer  -->
+            <h4 class="text">Follow me</h4>
+            <div class="links d-flex justify-content-around">
+                <button class="bt btn-sm"><a href="https://github.com/BaptisteDuray/" target="_blank"><img class="icon" src="{{ asset('icons/github.svg') }}" alt=""></a></button>
+                <button class="bt btn-sm"><a href="https://www.linkedin.com/in/baptisteduray" target="_blank"><img class="icon" src="{{ asset('icons/linkedin.svg') }}" alt=""></a></button>
             </div>
         </div>
-        <div class="text mt-3 bottom"><p>Developed by  &#10084; DURAY Baptiste || All rights reserved till - 2024</p></div>
-    </footer>
+
+  <!-- Contact link -->
+        <div class="col-md-3 text-center">
+                <a href="{{ path('app_contact') }}" style="text-decoration: none; color: inherit;">
+                    <h4 class="text">Contact</h4>
+                </a>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <div class="text mt-3 bottom"><p>Developed by  &#10084; DURAY Baptiste || All rights reserved till - 2024</p></div>
+</footer>
+
     <script src="{{ asset('js/script.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

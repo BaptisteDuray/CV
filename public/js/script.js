@@ -155,3 +155,21 @@ function printCV() {
 
     html2pdf().set(options).from(element).save();
   }
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const backButton = document.getElementById('backButton');
+    if (backButton) {
+        const mainRoute = backButton.dataset.route;
+
+        // Fonction pour diriger vers la page principale
+        function goBack() {
+            // Rediriger l'utilisateur vers la page principale en utilisant le chemin récupéré
+            window.location.href = mainRoute;
+        }
+
+        // Ajouter un écouteur d'événements pour le bouton "Back"
+        backButton.addEventListener('click', goBack);
+    }
+});
+
+
