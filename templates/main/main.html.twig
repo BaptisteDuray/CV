@@ -1,0 +1,142 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My CV{% endblock %}
+
+{% block body %}
+<div class="bg-dark border-bottom border-bottom-dark" data-bs-theme="dark" id="nav">
+    <div class="text-center header py-2">
+        <h1>My CV</h1>
+    </div>
+</div>
+<!-- CV Form  -->
+<div class="container" id="cv-form">
+    <div class="row my-2">
+        <div class="col-md-6">
+            <!-- first col -->
+            <h3>Personal Information</h3>
+            <div class="form-group">
+                <label for="nameFeild">My Name</label>
+                <input type="text" class="form-control" id="nameFeild" placeholder="Baptiste">
+            </div>
+            <div class="form-group mt-2">
+                <label for="eduFeild">My Current Situation</label>
+                <input type="text" class="form-control" id="eduFeild" placeholder="Developer Full Stack">
+            </div>
+            <!-- Contact Number -->
+            <div class="form-group mt-2">
+                <label for="contactFeild">My Contact</label>
+                <input type="tel" class="form-control" id="contactFeild" placeholder="+33686527809">
+            </div>
+            <!-- Email ID -->
+            <div class="form-group mt-2">
+                <label for="emailFeild">My Email ID</label>
+                <input type="email" class="form-control" id="emailFeild" placeholder="baptisteduray@gmail.com">
+            </div>
+    
+            <!-- Address -->
+            <div class="form-group mt-2">
+                <label for="addressFeild"> My Address</label>
+                <textarea type="text" class="form-control" id="addressFeild" placeholder="6, allée de la Roselière. 67540 Ostwald"></textarea>
+            </div>
+            <!-- Area of Interest -->
+            <div class="form-group mt-2">
+                <label for="interestFeild">Area of Interest</label>
+                <textarea type="text" class="form-control" id="interestFeild" placeholder="Chess, football, IT, Tactical Games, RPG Games, Thrillers, travels"></textarea>
+            </div>
+            <!-- Important Links -->
+            <p class="text-secondary my-3">Social Network</p>
+            <div class="form-group">
+                <label for="gitFeild">My Github</label>
+                <input type="text" class="form-control" id="gitFeild" placeholder="https://github.com/BaptisteDuray/">
+            </div>
+            <div class="form-group mt-2">
+                <label for="linkdinFeild">My Linkedin Profile</label>
+                <input type="text" class="form-control" id="linkedinFeild" placeholder="https://www.linkedin.com/in/baptisteduray">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- second col -->
+            <h3>Professional Information</h3>
+            <!-- Academic Qualifications -->
+            <div class="form-group mt-2" id="AddAQ">
+                <label for="">Academic Qualifications</label>
+                <textarea type="text" class="form-control eqFeild" placeholder="
+                Developer Fullstack, O'clock school, 2024.
+                Airport security agent , Camas formation, 2016.
+                High school ES diploma , Marie de Champagne, 2008.
+
+                "></textarea>
+                <!-- New Text Area-->
+                <div class="container text-center mt-2" id="aqAdd"></div>
+            </div>
+            <!-- Programming Languages -->
+            <div class="form-group mt-2" id="AddLang">
+                <label for="langFeild">Programming Languages</label>
+                
+                <!-- Frontend Languages -->
+                <h4>Frontend</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/html5.svg') }}" alt="HTML5" width="30" height="30">
+                        <span>HTML5</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/css3.svg') }}" alt="CSS3" width="30" height="30">
+                        <span>CSS3</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/javascript.svg') }}" alt="JavaScript" width="30" height="30">
+                        <span>JavaScript</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/twig.svg') }}" alt="Twig" width="30" height="30">
+                        <span>Twig</span>
+                    </li>
+                </ul>
+                
+                <!-- Backend Languages -->
+                <h4>Backend</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/symfony.svg') }}" alt="Symfony" width="30" height="30">
+                        <span>Symfony</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/laravel.svg') }}" alt="Laravel" width="30" height="30">
+                        <span>Laravel</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/php.svg') }}" alt="PHP" width="30" height="30">
+                        <span>PHP</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/java.svg') }}" alt="Java" width="30" height="30">
+                        <span>Java</span>
+                    </li>
+                </ul>
+                
+                <!-- Other Tools -->
+                <h4>Others</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/docker.svg') }}" alt="Docker" width="30" height="30">
+                        <span>Docker</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/git.svg') }}" alt="Git" width="30" height="30">
+                        <span>Git</span>
+                    </li>
+                     <li class="list-inline-item">
+                        <img src="{{ asset('icons/githubb.svg') }}" alt="Github" width="30" height="30">
+                        <span>Github</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ asset('icons/wordpress.svg') }}" alt="Wordpress" width="30" height="30">
+                        <span>Wordpress</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
