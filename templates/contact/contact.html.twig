@@ -29,9 +29,14 @@
             </div>
             <div class="mb-3">
                 {{ form_widget(contactForm.contact_number, {'attr': {'class': 'form-control', 'placeholder': 'Contact Number'}}) }}
+                <small class="form-text text-muted">Optional</small>
             </div>
             <div class="mb-3">
                 {{ form_widget(contactForm.message, {'attr': {'class': 'form-control', 'placeholder': 'Message', 'rows': '4'}}) }}
+            </div>
+            <div class="mb-3">
+                {{ form_widget(contactForm.attachment, {'attr': {'class': 'form-control'}}) }}
+                <small class="form-text text-muted">Optional</small>
             </div>
             <div class="d-flex justify-content-between">
                 <button type="button" class="btn btn-danger" id="backButton" data-route="{{ path('app_main') }}">Back</button>
@@ -42,7 +47,6 @@
     </div>
 </div>
 {% endblock %}
-
 
 {% block javascripts %}
     <script src="{{ asset('js/script.js') }}"></script>
