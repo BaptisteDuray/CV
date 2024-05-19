@@ -16,11 +16,13 @@ CREATE TABLE `contact` (
   `mail` varchar(255) NOT NULL,
   `contact_number` int(11) DEFAULT NULL,
   `message` varchar(255) NOT NULL,
+  `attachment` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `contact` (`id`, `firstname`, `name`, `company`, `mail`, `contact_number`, `message`) VALUES
-(1,	'Christian',	'Duray',	'daddycorp',	'christianduray@oclock.io',	608151233,	'Bonjour');
+INSERT INTO `contact` (`id`, `firstname`, `name`, `company`, `mail`, `contact_number`, `message`, `attachment`) VALUES
+(1,	'Michael',	'Schott',	'Dunder Mifflin',	'michaelschott@gmail.com',	NULL,	'Hello, this is Dunder Mifflin',	NULL),
+(2,	'James',	'Peralta',	'Brooklyn 99',	'james.peralta@gmail.com',	NULL,	'Hello, this is James Peralta',	'jake-peralta-costume-6649ded39c742.webp');
 
 DROP TABLE IF EXISTS `doctrine_migration_versions`;
 CREATE TABLE `doctrine_migration_versions` (
@@ -30,7 +32,5 @@ CREATE TABLE `doctrine_migration_versions` (
   PRIMARY KEY (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
-INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
-('DoctrineMigrations\\Version20240518153947',	'2024-05-18 15:40:00',	8);
 
--- 2024-05-18 15:43:10
+-- 2024-05-19 11:15:15
